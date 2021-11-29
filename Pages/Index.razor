@@ -1,0 +1,88 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Virtualize with Bootstrap</h1>
+
+
+<div class="row">
+    <Virtualize Items="Data.Items" Context="item" ItemSize="300" OverscanCount="20">
+        <ItemContent>
+
+            <div class="col-md-12 col-lg-6 col-xl-6 col-xxl-4 mt-3">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-sm">
+                                <h2>@item.Name</h2>
+                                <h4>(@item.PartnerName)</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-xl-7">
+                                Field 1
+                            </div>
+                            <div class="col-xl">
+                                @item.Field1
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-7">
+                                Field 1
+                            </div>
+                            <div class="col-xl">
+                                @item.Field1
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-7">
+                                Field 2
+                            </div>
+                            <div class="col-xl">
+                                @item.Field2
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-7">
+                                Field 3
+                            </div>
+                            <div class="col-xl">
+                                @item.Field3
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-7">
+                                Field 4
+                            </div>
+                            <div class="col-xl">
+                                @item.Field4
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-7">
+                                Field 5
+                            </div>
+                            <div class="col-xl">
+                                @item.Field5
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <a class="float-right" href="#">Manage</a>
+                    </div>
+                </div>
+            </div>
+
+        </ItemContent>
+    </Virtualize>
+
+</div>
